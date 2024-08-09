@@ -1,0 +1,68 @@
+.questionBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    height: 100%;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.question {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.answerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.answerContainer button {
+    outline: none;
+    border: none;
+    padding: 5px 0 5px 10px;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    display: flex;
+    gap: 20px;
+
+    font-size: 15px;
+
+    border-radius: 5px;
+    transition: all .2s ease;
+}
+
+.answerContainer button span {
+    text-align: left;
+}
+
+.answerContainer button:hover {
+    background-color: rgba(172, 255, 47, 0.3);
+    transition: all .2s ease;
+}
+
+.answerContainer button {
+    border: 1px solid rgb(210, 210, 210);
+}
+
+.answerContainer button.selected {
+    background-color: rgba(172, 255, 47, 0.7);
+    color: black;
+}
+
+.answerContainer button.selected:hover {
+    background-color: rgba(172, 255, 47, 0.7);
+}
+
+@media (max-width: 550px) {
+
+    .answerContainer {
+        width: 100%;
+    }
+}

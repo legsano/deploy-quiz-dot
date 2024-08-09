@@ -1,0 +1,59 @@
+.quizCard {
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgb(223, 223, 223);
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+.quizCardBox {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.quizCardBox p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quizCardBox p:nth-child(2) {
+    font-size: 14px;
+
+}
+
+.quizCardBox p:nth-child(3) {
+    font-size: 13px;
+    color: gray;
+}
+
+.quizCardBox p:nth-child(4) {
+    font-size: 13px;
+    color: gray;
+}
+
+.quizCardBox button {
+    align-self: self-start;
+    padding: 3px 10px 3px 10px;
+
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: #28AB00;
+    cursor: pointer;
+}
+
+.quizCardBox button:active {
+    background-color: #5dbe42;
+}

@@ -1,0 +1,54 @@
+.ballContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ball {
+    position: absolute;
+    border-radius: 50%;
+
+    width: 100px;
+    height: 100px;
+
+    background-color: teal;
+    box-shadow: 0 0 20px teal;
+}
+
+#ball-0 {
+    background-color: rgb(216, 125, 160);
+    box-shadow: 0 0 20px rgb(216, 125, 160);
+    width: 150px;
+    height: 150px;
+}
+
+#ball-1 {
+    background-color: lightgreen;
+    box-shadow: 0 0 20px lightgreen;
+    width: 100px;
+    height: 100px;
+}
+
+#ball-2 {
+    background-color: yellowgreen;
+    box-shadow: 0 0 20px yellowgreen;
+    width: 300px;
+    height: 300px;
+}
+
+#ball-3 {
+    background-color: rgb(180, 144, 209);
+    box-shadow: 0 0 20px rgb(180, 144, 209);
+    width: 120px;
+    height: 120px;
+}
+
+#ball-4 {
+    background-color: rgb(96, 236, 236);
+    box-shadow: 0 0 20px rgb(96, 236, 236);
+    width: 200px;
+    height: 200px;
+}

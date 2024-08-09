@@ -1,0 +1,229 @@
+.resultContainer {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.resultContContent {
+    position: absolute;
+    margin-top: 50px;
+
+    width: 100%;
+    height: calc(100vh - 50px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.resultBox {
+    background-color: white;
+    width: 600px;
+    height: 500px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+
+    padding: 10px 0 20px 0;
+
+    transition: all 1s ease;
+    margin: 0 20px 0 20px;
+}
+
+.resultBox h2 {
+    text-align: center;
+}
+
+.resCardBox {
+    height: 400px;
+    padding: 10px 0 10px 0;
+    margin: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+
+    overflow: auto;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Shadow di dalam komponen */
+    transition: all 1s ease;
+}
+
+.resCardBox p {
+    text-align: center;
+    font-size: 13px;
+    color: grey;
+}
+
+.resultCard {
+    height: auto;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    background-color: rgb(245, 245, 250);
+    border: 1px solid rgb(220, 220, 220);
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 5px;
+}
+
+.headResCard {
+    padding: 2px 15px 2px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgb(230, 230, 250);
+    border-bottom: 1px solid rgb(220, 220, 220);
+    gap: 5px;
+}
+
+.headResCard h5 {
+    width: 100%;
+    font-size: 13px;
+}
+
+.headResCard p {
+    width: 100%;
+    color: black;
+}
+
+.headResCard p:nth-child(3) {
+    text-align: end;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.score p {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.score span {
+    font-size: 30px;
+}
+
+.detailAnswer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    background-color: rgb(230, 230, 250);
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    border-top: 1px solid rgb(220, 220, 220);
+}
+
+.detailAnswer p {
+    color: black;
+}
+
+.resultButton {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resultButton button {
+    padding: 3px 10px 3px 10px;
+    font-weight: 500;
+    color: white;
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.resultButton button:nth-child(1) {
+    background-color: rgb(221, 63, 24);
+}
+
+.resultButton button:nth-child(2) {
+    background-color: #28AB00;
+}
+
+.resultButton button:active:nth-child(1) {
+    background-color: rgb(255, 81, 50);
+    transition: all .3s ease;
+}
+
+.resultButton button:active:nth-child(2) {
+    background-color: #5dbe42;
+    transition: all .3s ease;
+}
+
+
+@media(max-width: 650px) {
+    .resultBox {
+        width: 500px;
+        transition: all 1s ease;
+        margin: 0 20px 0 20px;
+    }
+}
+
+@media(max-width: 600px) {
+    .resultBox {
+        width: 400px;
+        transition: all 1s ease;
+        margin: 0 20px 0 20px;
+    }
+
+    .detailAnswer {
+        grid-template-columns: 1fr 1fr;
+        /* 2 kolom */
+        grid-template-rows: repeat(2, 1fr);
+        /* 2 baris */
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 450px) {
+    .resultBox {
+        width: 350px;
+        transition: all 1s ease;
+        margin: 0 20px 0 20px;
+    }
+
+    .headResCard {
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .headResCard p:nth-child(3) {
+        text-align: center;
+    }
+
+    .detailAnswer {
+        font-size: 12px;
+    }
+}

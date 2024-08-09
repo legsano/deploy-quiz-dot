@@ -1,0 +1,164 @@
+.navbar {
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 5;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.navBox {
+    width: calc(100% - 40px);
+    height: calc(100% - 10px);
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navLogo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navLogo img {
+    width: 82px;
+    margin-right: 7px;
+}
+
+.navLogo h2 {
+    font-size: 25px;
+}
+
+.accountNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accountNav img {
+    width: 30px;
+}
+
+.accountNav p {
+    margin: 0 15px 0 10px;
+    font-size: 14px;
+    font-weight: 450;
+}
+
+
+/* Dropdown arrow styles */
+.dropdownArrow {
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.3s;
+}
+
+.dropdownArrow img {
+    width: 15px;
+    height: 15px;
+}
+
+.dropdownArrow.up {
+    transform: rotate(180deg);
+}
+
+
+/* Dropdown menu styles */
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    top: 105%;
+    right: 5px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+
+.dropdownMenu.visible {
+    display: block;
+}
+
+.dropdownMenu button {
+    border: none;
+    background: none;
+    padding: 5px 2px 5px 2px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    background: white;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.dropdownMenu button:hover {
+    background-color: rgba(172, 255, 47, 0.5);
+}
+
+.dropdownMenu button:active {
+    background: white;
+}
+
+@media (min-width: 480px) {
+    .mobProfil {
+        display: none;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .dropdownMenu {
+        height: auto;
+        width: 150px;
+
+    }
+
+    .profil {
+        display: none;
+    }
+
+    .mobProfil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 0 10px 0;
+        border-bottom: 1px solid rgb(230, 230, 230);
+    }
+
+    .mobProfil img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mobProfil p {
+        margin: 0;
+    }
+}
